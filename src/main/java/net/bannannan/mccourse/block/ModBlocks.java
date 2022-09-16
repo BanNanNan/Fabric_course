@@ -19,8 +19,14 @@ public class ModBlocks {
     public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.COURSE);
 
+    public static final Block RAW_ORICHALCUM_BLOCK = registerBlock("raw_orichalcum_block",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroups.COURSE);
+
     public static final Block ORICHALCUM_ORE = registerBlock("orichalcum_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block DEEPSLATE_ORICHALCUM_ORE = registerBlock("deepslate_orichalcum_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool()),ModItemGroups.COURSE);
 
 
 
