@@ -42,12 +42,21 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()),ModItemGroups.COURSE);
 
     public static final Block ORICHALCUM_BUTTON = registerBlock("orichalcum_button",
-            new ModStonebuttonBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()),ModItemGroups.COURSE);
+            new ModStonebuttonBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),ModItemGroups.COURSE);
 
     public static final Block ORICHALCUM_PRESSURE_PLATE = registerBlock("orichalcum_pressure_plate",
             new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()),ModItemGroups.COURSE);
-//* 웹 후크 테스팅
+                    FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_FENCE = registerBlock("orichalcum_fence",
+            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_FENCE_GATE = registerBlock("orichalcum_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_WALL = registerBlock("orichalcum_wall",
+            new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),ModItemGroups.COURSE);
+
 
 
 
