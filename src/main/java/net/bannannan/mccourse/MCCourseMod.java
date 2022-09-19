@@ -2,6 +2,7 @@ package net.bannannan.mccourse;
 
 import net.bannannan.mccourse.block.ModBlocks;
 import net.bannannan.mccourse.item.ModItems;
+import net.bannannan.mccourse.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,5 +18,6 @@ public class MCCourseMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModRegistries.resisterModStuffs();
 	}
 }

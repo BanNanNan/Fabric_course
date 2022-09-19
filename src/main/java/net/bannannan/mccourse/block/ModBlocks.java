@@ -1,11 +1,14 @@
 package net.bannannan.mccourse.block;
 
 import net.bannannan.mccourse.MCCourseMod;
+import net.bannannan.mccourse.block.custom.ModPressurePlateBlock;
+import net.bannannan.mccourse.block.custom.ModStairsBlock;
+import net.bannannan.mccourse.block.custom.ModStonebuttonBlock;
+import net.bannannan.mccourse.block.custom.SpeedyBlock;
 import net.bannannan.mccourse.item.ModItemGroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -27,6 +30,23 @@ public class ModBlocks {
 
     public static final Block DEEPSLATE_ORICHALCUM_ORE = registerBlock("deepslate_orichalcum_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
+            new SpeedyBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_STAIRS = registerBlock("orichalcum_stairs",
+            new ModStairsBlock(ModBlocks.ORICHALCUM_BLOCK.getDefaultState(),
+                    FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_SLAB = registerBlock("orichalcum_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_BUTTON = registerBlock("orichalcum_button",
+            new ModStonebuttonBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()),ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_PRESSURE_PLATE = registerBlock("orichalcum_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()),ModItemGroups.COURSE);
 
 
 

@@ -2,13 +2,29 @@
   "item.mccourse.orichalcum_ingot": "Orichalcum Ingot",
   "item.mccourse.orichalcum_nugget": "Orichalcum Nugget",
   "item.mccourse.raw_orichalcum": "Raw Orichalcum",
+  "item.mccourse.dowsing_rod": "Dowsing Rod",
+
+  "item.mccourse.turnip": "Turnip",
+  "item.mccourse.coal_sliver": "Coal Sliver",
 
 
   "block.mccourse.orichalcum_block": "Orichalcum Block",
+  "block.mccourse.orichalcum_stairs": "Orichalcum Stairs",
+  "block.mccourse.orichalcum_slab": "Orichalcum Slab",
   "block.mccourse.raw_orichalcum_block": "Raw Orichalcum Block",
   "block.mccourse.orichalcum_ore": "Orichalcum Ore",
   "block.mccourse.deepslate_orichalcum_ore": "DeepSlate Orichalcum Ore",
+  "block.mccourse.orichalcum_button": "Orichalcum Button",
+  "block.mccourse.orichalcum_pressure_plate": "Orichalcum Pressure Plate",
 
 
-  "itemGroup.mccourse.course": "Pinky Blocks Tab"
+  "block.mccourse.speedy_block": "Speedy Block",
+
+
+  "itemGroup.mccourse.course": "Pinky Blocks Tab",
+
+  "item.mccourse.dowsing_rod.no_valuables" : "No Valuables found!",
+
+  "item.mccourse.dowsing_rod.tooltip.shift": "Right Click to find source",
+  "item.mccourse.dowsing_rod.tooltip" : "Press §eSHIFT§r for more Information"
 }
