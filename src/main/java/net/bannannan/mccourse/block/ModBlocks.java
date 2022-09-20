@@ -1,10 +1,7 @@
 package net.bannannan.mccourse.block;
 
 import net.bannannan.mccourse.MCCourseMod;
-import net.bannannan.mccourse.block.custom.ModPressurePlateBlock;
-import net.bannannan.mccourse.block.custom.ModStairsBlock;
-import net.bannannan.mccourse.block.custom.ModStonebuttonBlock;
-import net.bannannan.mccourse.block.custom.SpeedyBlock;
+import net.bannannan.mccourse.block.custom.*;
 import net.bannannan.mccourse.item.ModItemGroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -57,7 +54,11 @@ public class ModBlocks {
     public static final Block ORICHALCUM_WALL = registerBlock("orichalcum_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()),ModItemGroups.COURSE);
 
+    public static final Block CHEERY_BLOSSOM_DOOR = registerBlock("cheery_blossom_door",
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3f).requiresTool().nonOpaque()),ModItemGroups.COURSE);
 
+    public static final Block CHEERY_BLOSSOM_TRAPDOOR = registerBlock("cheery_blossom_trapdoor",
+            new ModTrapDoor(FabricBlockSettings.of(Material.WOOD).strength(3f).requiresTool().nonOpaque()),ModItemGroups.COURSE);
 
 
 
